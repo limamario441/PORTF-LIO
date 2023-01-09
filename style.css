@@ -1,0 +1,532 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+.header{
+    background-color: #171C24;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+}
+
+.logo{
+    color:#F9F9F9;
+    font-size: 1.1rem;
+}
+
+.logo  strong {
+    color: orangered;
+}
+
+.header-menu ul{
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header-menu a{
+    color: #F9F9F9;
+}
+
+.header-menu a::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: orangered;
+    display: block;
+    transition: .3s;
+}
+
+.header-menu a:hover::after{
+    width: 100%;
+}
+
+.header-menu .link-destaque{
+    display: flex;
+    align-items: center;
+    background-color: orangered;
+    color: #171C24;
+    padding: .5rem 2rem;
+    border-radius: .5rem;
+}
+
+.mobile-menu-icon{
+    display: none;
+}
+
+.header-mobile{
+    display: none;
+}
+
+@media(max-width:800px){
+
+    .header{
+        padding: 1rem 1rem;
+    }
+
+    .logo{
+        flex-wrap: wrap;
+        font-size: .8rem;
+    }
+
+    .link-header {
+        display: none;
+    }
+
+   .header-menu li .link-destaque{
+     display: none;
+   }
+
+   .mobile-menu-icon{
+    display: block;
+    }
+
+    .mobile-menu-icon button{
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+        color: white;
+        font-size: 1.2rem;
+    }
+
+    .header-mobile ul{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        background-color: #171C24;
+    }
+
+    .header-mobile ul a{
+        color: aliceblue;
+    }
+
+    .header-mobile .link-destaque{
+        background-color: #fff;
+        color: #171C24;
+        display: block;
+        padding: 1rem 2rem; 
+    }
+
+    .header-mobile .link-header{
+        display: block;
+        padding: 1rem 2rem; 
+    }
+
+    .abrir{
+        display: block;
+    }
+
+}
+
+/**/
+
+.container-main{
+    background-image: url(img/CYBERLOVE\ __\ PJM.gif);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 75vh;
+ 
+}
+
+
+
+.container-transparente{
+    background-color: #171c24c9;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-introducao h1{
+    font-size: 5rem;
+    color: #F9F9F9;
+}
+
+.main-introducao strong{
+    color: #fff;
+}
+
+.main-introducao p{
+    color: #F9F9F9;
+    margin-top: .2rem;
+}
+
+@media(max-width:1000px){
+
+    .container-main{
+        height: 65vh;
+    }
+
+    .main-introducao{
+        padding: 0 1rem;
+    }
+
+    .main-introducao h1{
+        font-size: 3.9rem;
+    }
+
+    .main-introducao p{
+        font-size: .9rem;
+    }
+}
+
+@media(max-width:810px){
+
+    .main-introducao h1{
+        font-size: 2.7rem;
+    }
+}
+
+@media(max-width:640px){
+
+    .main-introducao h1{
+        font-size: 2.4rem;
+    }
+}
+
+
+
+/**/
+
+.fundo{
+    background-color: #171C24;
+    padding: 6rem 0;
+   
+}
+
+
+.habilidades{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: center;
+}
+
+.fundo strong{
+    color: #fff;
+}
+
+.habilidades-item{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(4,1fr);
+}
+
+.habilidades div{
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+    color:aliceblue ;
+    padding: 1rem;
+}
+
+.habilidades-item div:hover{
+    border: 1px solid orangered;
+}
+
+.habilidades i{
+    color: aliceblue;
+    font-size: 5rem;
+   
+}
+
+.fundo h1{
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    color: aliceblue;
+}
+
+@media(max-width:699px){
+
+    .habilidades i{
+        font-size: 3rem;
+    } 
+}
+
+@media(max-width:580px){
+
+    .fundo{
+        padding: 4rem 0;
+    }
+
+    .fundo h1{
+        font-size: 2rem;
+    }
+
+    .habilidades{
+        padding: 0 1rem;
+    }
+
+    .habilidades-item{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/**/
+
+.container-sobre{
+    background-image: url(img/MelRibeiro\ -\ Overview.gif);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 45vh;
+}
+
+.sobre{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.sobre-transparencia{
+    background-color: #171c24c9;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-transparencia h1{
+    text-align: left;
+    font-size: 3rem;
+    color: #F9F9F9;
+    margin-bottom: 1rem;
+}
+
+.sobre p{
+    color: #F9F9F9;
+    font-size: 1.1rem;
+}
+
+.sobre-transparencia strong{
+    color: #fff;
+}
+
+@media(max-width:580px){
+
+    .sobre{
+        padding: 0 1rem;
+    }
+
+    .container-sobre{
+        height: 60vh;
+    }
+
+    .sobre-transparencia h1{
+        font-size: 2rem;
+    }
+}
+
+/**/
+
+.container-projetos{
+    background-color: #171C24;
+    padding: 5rem 0;
+}
+
+.conteudo-projetos{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+}
+
+.container-projetos h1{
+    text-align: left;
+    font-size: 3rem;
+    color: #F9F9F9;
+    margin-bottom: 3rem;
+}
+
+.container-projetos strong{
+    color: #fff;
+}
+
+.projetos{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+
+
+.projetos img{
+    display: block;
+    height: 400px;
+    max-width: 100%;
+    margin: 0 auto;
+    transition: transform .4s;
+}
+.projetos img:hover{
+
+    transform: scale(1.1);
+}
+.projetos p{
+    margin-top: 1rem;
+}
+
+.projetos li{
+    text-align: center;
+    margin-bottom: .1rem ;
+}
+
+.projetos div{
+    background-color: #ffff;
+    margin: .6rem;
+    padding: 1rem;
+    text-align: justify;
+}
+
+.projetos div .botao{
+    padding: .2rem;
+    background-color: orangered;
+    color: #F9F9F9;
+}
+
+.projetos  .botao a{
+    color: #F9F9F9;
+}
+
+.projetos .botao a:hover{
+    color: #fff;
+}
+
+@media(max-width:920px){
+
+    .projetos div{
+        background-color: #F9F9F9;
+        margin: .4rem;
+        padding: .5rem;
+    }
+
+    .conteudo-projetos{
+        padding: 0 1rem;
+    }
+
+    .projetos{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media(max-width:610px){
+    
+    .projetos{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .container-projetos h1{
+        font-size: 2.5rem;
+    }
+}
+
+/**/
+
+.container-contato{
+    background-image: url(img/fundo1.jpeg);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 30vh;
+}
+
+.contato-transparencia{
+    background-color: #171c24c9;
+    height: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem; 
+}
+
+.contato h1{
+    text-align: left;
+    font-size: 3rem;
+    color: #F9F9F9;
+    margin-bottom: 3rem;
+}
+
+.contato strong{
+    color: #fff;
+}
+
+.contato-link{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 3rem;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contato i{
+    color: aliceblue;
+    font-size: 3rem;
+}
+
+@media(max-width:680px){
+
+    .contato{
+        padding: 0 1rem; 
+    }
+
+    .contato h1{
+        font-size: 2.3rem;
+    }
+
+    .contato i{
+        color: aliceblue;
+        font-size: 2.3rem;
+    }
+}
+
+@media(max-width:500px){
+
+    .container-contato{
+        height: 25vh;
+    }
+
+    .contato h1{
+        font-size: 1.5rem;
+    }
+
+    .contato i{
+        color: aliceblue;
+        font-size: 2rem;
+    }
+}
+.whast{
+
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 999;
+    cursor: pointer;
+    transition: transform .4s
+   
+}
+
+.whast:hover{
+    transform: scale(1.4);
+
+}
